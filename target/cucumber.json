@@ -1,0 +1,183 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2191036726,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I logged in into OrangeHrm",
+            "match": {
+              "location": "AddEmployeeSteps.i_logged_in_into_OrangeHrm()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 103179935,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Admin link",
+            "match": {
+              "location": "SkillsSteps.i_click_on_Admin_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78510851,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on job",
+            "match": {
+              "location": "JobTitleSteps.i_click_on_job()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 202097943,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on jobtitle",
+            "match": {
+              "location": "JobTitleSteps.i_click_on_jobtitle()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-07-14T17:55:07.173Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2948960656,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.start(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 5505331642,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.open()"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "Job Title Validation",
+        "description": "",
+        "id": "job-title;job-title-validation;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 7356936,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.close()"
+            }
+          },
+          {
+            "result": {
+              "duration": 111616545,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.end(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1312436601,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I get all job titles from UI",
+            "match": {
+              "location": "JobTitleSteps.i_get_all_job_titles_from_UI()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83264763,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I execute \"SELECT JOB_TITLE FROM JOBS ORDER BY 1\" from Database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SELECT JOB_TITLE FROM JOBS ORDER BY 1\"",
+                  "offset": 10
+                }
+              ],
+              "location": "JobTitleSteps.i_execute_from_Database(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1423652,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Job titles are matched",
+            "match": {
+              "location": "JobTitleSteps.job_titles_are_matched()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@jobtitle"
+          },
+          {
+            "name": "@db"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Job Title",
+    "description": "  Valiation for job title functionality",
+    "id": "job-title",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/JobTitle.feature",
+    "tags": [
+      {
+        "name": "@jobtitle",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
